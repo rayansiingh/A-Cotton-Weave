@@ -14,18 +14,19 @@ body {
 main {
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 100px;
+  align-items: flex-end;
+  padding: 0px 100px;
   padding-top: 150px;
+  gap: 65px;
 }
 
 #left {
   height: 100%;
-  width: 48%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 #left h1 {
@@ -46,7 +47,7 @@ main {
 }
 
 #bottom-left p {
-  width: 70%;
+  width: 65%;
   font-size: 15px;
   font-weight: 500;
   color: #292828;
@@ -85,6 +86,62 @@ main {
 }
 
 #right {
-  height: 100%;
-  width: 48%;
+  height: 90%;
+  width: 38%;
+  position: relative;
+}
+
+#right img {
+  width: 100%;
+  height: 89.82%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#right-top {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+#right-top h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#right-top h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#black-circle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  left: 91%;
+}
+
+#black-circle h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#rotated {
+  position: absolute;
+  left: -10%;
+  bottom: 0;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  font-size: 25px;
+  font-weight: 600;
 }
